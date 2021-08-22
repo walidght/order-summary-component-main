@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg {
+    max-width: 100%;
+}
+
+#bg-container {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: fit-content;
+    max-width: 25rem;
+    min-width: 20rem;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: drop-shadow(0 16px 10px rgba(0, 0, 0, 0.1));
+}
+
+h1,
+#desciption {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-top: 1.7rem;
+}
+
+#desciption {
+    color: hsl(224, 23%, 55%);
+    width: 80%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#order-btn {
+    color: white;
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    padding: 0.6rem 0;
+    width: 80%;
+    border-radius: 10px;
+    filter: drop-shadow(0 16px 10px hsl(225, 100%, 94%));
+}
+
+#order-btn:hover {
+    background-color: hsl(254, 92%, 66%);
+}
+
+#order-btn,
+#cancel-btn {
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+#cancel-btn {
+    margin-top: 1.5rem;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+#cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+#plan {
+    margin: 1.2rem 0;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#music-icon {
+    height: 50%;
+}
+
+#change-btn {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+#change-btn:hover {
+    text-decoration: none;
+    color: hsl(254, 92%, 66%);
+}
+
+#plan-p,
+#plan-price {
+    font-size: 0.8rem;
+}
+
+#plan-p {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+#plan-price {
+    color: hsl(224, 23%, 55%);
+}
+
+#plan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 2.3rem;
+    padding-left: 1rem;
+    padding-right: min(25%, 6.5rem);
+}
