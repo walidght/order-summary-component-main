@@ -3,43 +3,33 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: hsl(225, 100%, 94%);
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-#bg {
-    max-width: 100%;
-}
-
-#bg-container {
-    height: 100%;
-    width: 100%;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #container {
-    position: absolute;
-    background-color: white;
+    width: min(90%, 23rem);
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    height: fit-content;
-    max-width: 25rem;
-    min-width: 20rem;
     align-items: center;
     border-radius: 15px;
-    overflow: hidden;
     filter: drop-shadow(0 16px 10px rgba(0, 0, 0, 0.1));
+    overflow: hidden;
+    background: white;
 }
 
 h1,
@@ -48,16 +38,16 @@ h1,
 }
 
 h1 {
-    color: hsl(223, 47%, 23%);
-    font-weight: 900;
     margin-top: 1.7rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 
 #desciption {
-    color: hsl(224, 23%, 55%);
     width: 80%;
-    font-size: 0.9rem;
     margin-top: 1rem;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
 }
 
 #hero-img {
@@ -65,14 +55,13 @@ h1 {
 }
 
 #order-btn {
-    color: white;
-    text-decoration: none;
-    background-color: hsl(245, 75%, 52%);
-    text-align: center;
-    padding: 0.6rem 0;
     width: 80%;
+    padding: 0.6rem 0;
+    color: white;
+    text-align: center;
     border-radius: 10px;
     filter: drop-shadow(0 16px 10px hsl(225, 100%, 94%));
+    background: hsl(245, 75%, 52%);
 }
 
 #order-btn:hover {
@@ -81,16 +70,15 @@ h1 {
 
 #order-btn,
 #cancel-btn {
-    font-weight: 700;
     font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
     letter-spacing: 1px;
 }
 
 #cancel-btn {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 2rem 0;
     color: hsl(224, 23%, 55%);
-    text-decoration: none;
-    margin-bottom: 2rem;
 }
 
 #cancel-btn:hover {
@@ -98,14 +86,14 @@ h1 {
 }
 
 #plan {
-    margin: 1.2rem 0;
-    background-color: hsl(225, 100%, 98%);
     width: 80%;
     height: 5rem;
+    margin: 1.2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    background: hsl(225, 100%, 98%);
 }
 
 #music-icon {
@@ -119,8 +107,8 @@ h1 {
 }
 
 #change-btn:hover {
-    text-decoration: none;
     color: hsl(254, 92%, 66%);
+    text-decoration: none;
 }
 
 #plan-p,
@@ -138,11 +126,10 @@ h1 {
 }
 
 #plan-text {
+    height: 2.3rem;
+    padding: 0rem min(25%, 6.5rem) 0rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 2.3rem;
-    padding-left: 1rem;
-    padding-right: min(25%, 6.5rem);
 }
